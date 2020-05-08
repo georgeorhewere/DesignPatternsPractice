@@ -5,7 +5,7 @@ namespace BuilderPattern
     public abstract class ComputerBuilder
     {
         protected string model;
-        private ComputerProduct product;
+        protected ComputerProduct product;
 
         public ComputerBuilder(string _model)
         {
@@ -15,8 +15,9 @@ namespace BuilderPattern
         public abstract void AddHardDisk();
         public abstract void AddRAM();
         public abstract void AddProcessor();
-        public ComputerProduct GetProduct() {
-            return product;
+        public void GetSpecifications() {
+            Console.WriteLine($"Model : {model}");
+            product.Show();
         }
 
     }
