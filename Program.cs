@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuilderPattern;
+using System;
 
 namespace DesignPatternsPractice
 {
@@ -6,7 +7,9 @@ namespace DesignPatternsPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Practicing Design Patterns");
+            ComputerDirector director = new ComputerDirector();
+
         }
     }
 }
