@@ -25,7 +25,7 @@ namespace BuilderPattern
         public override void AddRAM()
         {
            
-            product.Add(" DDR4 RAM : 16GB");
+            product.Add("DDR4 RAM : 16GB");
         }
     }
 }

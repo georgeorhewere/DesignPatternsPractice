@@ -20,12 +20,12 @@ namespace BuilderPattern
         public override void AddProcessor()
         {
             product.Add($"AMD Ryzen 9 3900X" +
-                        $"12-Core CPU 24-Threads");
+                        $" 12-Core CPU 24-Threads");
         }
 
         public override void AddRAM()
         {
-            product.Add(" DDR3 RAM : 20GB");
+            product.Add("DDR3 RAM : 20GB");
         }
     }
 }

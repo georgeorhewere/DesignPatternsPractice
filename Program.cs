@@ -9,6 +9,8 @@ namespace DesignPatternsPractice
         {
             Console.WriteLine("Practicing Design Patterns");
             ComputerDirector director = new ComputerDirector();
+            director.Create();
+
 
         }
     }
