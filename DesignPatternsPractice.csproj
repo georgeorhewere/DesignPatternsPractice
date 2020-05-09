@@ -6,12 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Adapter\**" />
     <Compile Remove="BuilderPattern\**" />
+    <EmbeddedResource Remove="Adapter\**" />
     <EmbeddedResource Remove="BuilderPattern\**" />
+    <None Remove="Adapter\**" />
     <None Remove="BuilderPattern\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="Adapter\Adapter.csproj" />
     <ProjectReference Include="BuilderPattern\BuilderPattern.csproj" />
   </ItemGroup>
 
