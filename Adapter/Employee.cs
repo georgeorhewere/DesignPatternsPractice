@@ -14,14 +14,14 @@ namespace Adapter
         }
 
 
-        public double getMonthlyWage()
+        public double GetMonthlyWage()
         {
             return monthlyRate;
         }
 
-        public string printMonthlyPaySlip()
+        public string PrintMonthlyPaySlip()
         {
-            return $"The monthly wage for {name} : {getMonthlyWage()}";
+            return $"The monthly wage for {name} : {GetMonthlyWage()}";
         }
     }
 }

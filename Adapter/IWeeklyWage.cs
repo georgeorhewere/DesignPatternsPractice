@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Adapter
 {
-    public interface IMonthlyWage
+    public interface IWeeklyWage
     {
-        double GetMonthlyWage();
-        string PrintMonthlyPaySlip();
+        double GetWeeklyWage();
     }
 }
