@@ -5,7 +5,8 @@ namespace Adapter
     public class Employee : IMonthlyWage
     {
         private double monthlyRate;
-        private string name;
+        public string Name { get { return name; } }
+        string name;
 
         public Employee(double rate, string employeeName)
         {

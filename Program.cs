@@ -25,6 +25,13 @@ namespace DesignPatternsPractice
             Console.WriteLine(earner.PrintMonthlyPaySlip());
             Console.WriteLine("--------------");
 
+            Console.WriteLine("Use part time adapter for employee");
+            PartTimeAdapter partTimeAdapter = new PartTimeAdapter("Frank Grimwall", 34768);
+            IWeeklyWage weeklyEarner = partTimeAdapter;
+            Console.WriteLine($"Wage from Interface : {weeklyEarner.GetWeeklyWage()}");
+            Console.WriteLine($"Wage from Adapter : Weekly -> {partTimeAdapter.PrintWeeklyPaySlip()} Monthly -> {partTimeAdapter.GetMonthlyWage()}");
+            Console.WriteLine("--------------");
+
             Console.ReadLine();
         }
     }
